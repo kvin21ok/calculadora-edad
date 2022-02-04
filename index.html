@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calcula tu edad</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="base">
+                <div class="enter">
+                    <h4>Calculadora de edad</h4>
+                </div>
+                <div class="block">
+                    <p class="title">Dia</p>
+                    <input type="text" name="date" id="date" placeholder="dd" required="required" minlength="1" maxlength="2" />
+                </div>
+                <div class="block">
+                    <p class="title">Mes</p>
+                    <input type="text" name="month" id="month" placeholder="mm" required="required" minlength="1" maxlength="2" />
+                </div>
+                <div class="block">
+                    <p class="title">Año</p>
+                    <input type="text" name="year" id="year" placeholder="aaaa" required="required" minlength="4" maxlength="4" />
+                </div>
+            </div>
+            <div class="base">
+                <div class="enter">
+                    <input type="button" name="submit" value="Calcular" onclick="age()" />
+                </div>
+            </div>
+            <div id="age"></div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
